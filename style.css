@@ -1,0 +1,110 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#root {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#editor {
+    display: flex;
+}
+
+#right-part {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px 5px 0;
+}
+
+#preview {
+    flex-grow: 1;
+    outline: none;
+    overflow: auto;
+}
+
+#command {
+    display: flex;
+    height: 200px;
+    border-radius: 5px 5px 0 0;
+    background-color: #1e1e1e7a !important;
+    flex-direction: column;
+}
+
+#command .toolbox {
+    display: flex;
+    padding: 5px;
+}
+
+#command .command-name {
+    font-size: 14px;
+    color: white;
+    user-select: none;
+    background-color: transparent;
+    transition: 0.2s;
+    margin-right: 5px;
+    padding: 2px;
+}
+
+#command .command-name:hover {
+    color: #b6b6b6;
+    background-color: #222;
+}
+
+#command .toolbox .material-icons {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+    user-select: none;
+}
+
+#command .toolbox .material-icons:hover {
+    color: #b6b6b6;
+}
+
+#console {
+    flex-grow: 1;
+}
+
+#status {
+    height: 20px;
+}
+
+#input {
+    min-height: 500px;
+    outline: none;
+    color: white;
+    padding: 10px;
+}
+
+.gutter {
+    display: flex;
+    justify-content: center;
+}
+
+.gutter .display {
+    width: 1px;
+    background-color: #222;
+    transition: 0.3s;
+}
+
+.gutter:hover .display {
+    width: 1px;
+    background-color: white;
+}
+
+.monaco-editor,
+.monaco-editor-background,
+.monaco-editor .inputarea.ime-input {
+    background-color: #1e1e1e7a !important;
+}
+
+.monaco-editor .margin {
+    background-color: #1e1e1e7a !important;
+}

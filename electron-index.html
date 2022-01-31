@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="Content-Security-Policy"
+		content="default-src 'none'; script-src file: 'sha256-RtE3AqQ1tBhtcwykhJsEKY7jjCqiGy5yH1mRDwu6gEE='; style-src 'unsafe-inline' file:; font-src file:" /> -->
+    <title>Monaco Editor!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="icon/icon.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="root">
+        <div id="editor"></div>
+        <div id="right-part">
+            <div id="preview" contenteditable="true"></div>
+            <div id="command">
+                <div class="toolbox">
+                    <span class="command-name" onclick="select_command()">
+						自動化
+					</span>
+                    <span class="material-icons" onclick="new_command()">
+						add
+					</span>
+                    <span class="material-icons" onclick="save_command()">
+						save
+					</span>
+                    <span class="material-icons" onclick="execute_command()" style="float:right">
+						play_arrow
+					</span>
+                </div>
+                <div id="console">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script src="js/renderer.js"></script>
+<script src="js/command.js"></script>
+
+</html>
