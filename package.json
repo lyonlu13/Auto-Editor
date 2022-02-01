@@ -4,6 +4,7 @@
     "description": "A simple text editor with custom script bases on Monaco Editor",
     "main": "main.js",
     "scripts": {
+        "start":"npx electron .",
         "prepare": "husky install",
         "prettier": "prettier --write .",
         "pretty-quick": "pretty-quick --staged",
